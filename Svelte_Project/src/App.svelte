@@ -23,9 +23,9 @@
 	}
 
 	let cats = [
-		{ description: 'TesT ok 1', id: 'J---aiyznGQ', name: 'Keyboard Cat' },
-		{ description: 'Test Ok 2', id: 'z_AbfPXTKms', name: 'Maru' },
-		{ description: 'tEst oK 3', id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }
+		{ description: 'TesT ok 1', id: 'J---aiyznGQ', name: 'Keyboard Cat ➚' },
+		{ description: 'Test Ok 2', id: 'z_AbfPXTKms', name: 'Maru ➚' },
+		{ description: 'tEst oK 3', id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat ➚' }
 	];
 </script>
 
@@ -40,11 +40,11 @@
 <section>
     <article>
 		<Component>
-			<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+			<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial ➚</a> to learn how to build Svelte apps.</p>
 		</Component>
 		<ul>
 			{#each cats as { description, id, name }, i}
-				<li><a title={description} target="_blank" href="https://www.youtube.com/watch?v={id}"> {i + 1}: {name}</a></li>
+				<li> {i + 1}: <a title={description} target="_blank" href="https://www.youtube.com/watch?v={id}">{name}</a></li>
 			{/each}
 		</ul>
 		<Component>
